@@ -1,0 +1,15 @@
+.bot-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #110f0f;
+}
+
+.collection-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 1.8em;
+}

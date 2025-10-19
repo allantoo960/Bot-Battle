@@ -1,0 +1,19 @@
+.your-bot-army {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1f1b1b;
+    border-top: 5px solid #007bff; 
+    min-height: 200px;
+    margin-bottom: 20px;
+}
+
+.army-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #c45050;
+    font-size: 1.5em;
+    font-weight: bold;
+}
