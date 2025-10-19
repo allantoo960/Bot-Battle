@@ -2,18 +2,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 20px;
-    background-color: #1f1b1b;
-    border-top: 5px solid #007bff; 
-    min-height: 200px;
-    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: rgb(64, 190, 14);
+    border-bottom: 5px solid #388E3C;
+    min-height: 220px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .army-header {
     width: 100%;
     text-align: center;
     margin-bottom: 15px;
-    color: #c45050;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
+    color: white;
 }

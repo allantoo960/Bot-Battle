@@ -1,3 +1,4 @@
+// src/YourBotArmy.jsx
 
 import React from 'react';
 import BotCard from './BotCard';
@@ -11,9 +12,9 @@ function YourBotArmy({ army, onReleaseBot, onDischargeBot }) {
         <BotCard 
           key={bot.id} 
           bot={bot} 
-          onCardClick={onReleaseBot}
-          showDischargeButton={true} 
-          onDischargeClick={onDischargeBot} 
+          onCardClick={onReleaseBot} // Clicking the card RELEASES the bot
+          showDischargeButton={true} // Show the red X button
+          onDischargeClick={onDischargeBot} // The X button discharges forever
         />
       ))}
     </div>

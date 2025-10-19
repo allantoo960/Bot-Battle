@@ -1,15 +1,24 @@
+
 .bot-collection {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column;
     padding: 20px;
-    background-color: #110f0f;
+    background-color: #ffffff;
+    flex-grow: 1; /* Allows it to fill the remaining space */
 }
 
 .collection-title {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #444;
-    font-size: 1.8em;
+text-align: center;
+margin-bottom: 20px;
+color: #333;
+font-size: 1.6em;
+border-bottom: 2px solid #ccc;
+padding-bottom: 10px;
+}
+
+.bot-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }

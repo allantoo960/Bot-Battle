@@ -1,0 +1,45 @@
+/* SortBar.css */
+
+.sort-filter-bar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    background-color: #333;
+    color: rgb(204, 30, 30);
+    gap: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sort-controls, .filter-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-filter-bar strong {
+    margin-right: 5px;
+    color: #f1c40f;
+}
+
+.sort-filter-bar button {
+    padding: 8px 12px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.sort-filter-bar button:hover {
+    background-color: #777;
+    border-color: #aaa;
+}
+
+/* Active filter style */
+.sort-filter-bar button.active-filter {
+    background-color: #f1c40f;
+    color: #333;
+    border-color: #f39c12;
+}

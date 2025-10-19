@@ -1,40 +1,61 @@
+/* Card.css */
+
 .bot-card {
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 15px;
+    padding: 10px;
     margin: 10px;
     width: 250px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
+    position: relative; /* Needed for absolute positioning of 'X' button */
 }
 
 .bot-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .bot-card img {
     width: 100%;
-    height: auto;
+    height: 150px;
+    object-fit: cover;
     border-radius: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .bot-card h3 {
     margin: 0 0 5px 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #333;
 }
 
 .bot-stats p {
-    margin: 3px 0;
-    font-size: 0.9em;
+    margin: 2px 0;
+    font-size: 0.85em;
     color: #666;
 }
 
-.stats-line {
-    display: flex;
-    justify-content: space-between;
+/* Discharge Button (X) */
+.discharge-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    line-height: 1;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.2s;
+}
+
+.discharge-btn:hover {
+    background-color: #c0392b;
 }

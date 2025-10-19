@@ -1,20 +1,21 @@
-import React from 'react';
-import BotCard from './BotCard';
-import "./Collection.css"; 
 
-function BotCollection({ bots, yourArmy, onEnlistBot, onDischargeBot }) {
+import BotCard from './BotCard';
+import "./Collection.css";
+
+function BotCollection({ bots, onShowSpecs }) {
   return (
     <div className="bot-collection">
       <h2 className="collection-title">Available Bots for Enlistment</h2>
-      {bots.map(bot => (
-        <BotCard 
-          key={bot.id} 
-          bot={bot} 
-          onCardClick={onEnlistBot} 
-          showDischargeButton={true}
-          onDischargeClick={onDischargeBot}
-        />
-      ))}
+      <div className="bot-list">
+        {bots.map(bot => (
+          <BotCard 
+            key={bot.id} 
+            bot={bot} 
+            onCardClick={onShowSpecs} 
+            showDischargeButton={false}
+          />
+        ))}
+      </div>
     </div>
   );
 }
